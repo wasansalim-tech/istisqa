@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>صلاة الاستسقاء ودورة المطر</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#e6f2fd;--surf:#fff;--ink:#0f2a5c;--mute:#41587f;--line:#b7d0ee;--acc:#1347b5;--acc2:#e0ecfb;--warn:#9a5b13;--warnbg:#fbefd9;--ok:#1d7a4d;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1a1f;--surf:#16262d;--ink:#e6f1f4;--mute:#9bb5bd;--line:#2a414a;--acc:#5cc3e4;--acc2:#12323c;--warn:#f0c27a;--warnbg:#3a2e17;--ok:#6fd6a0;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1a1f;--surf:#16262d;--ink:#e6f1f4;--mute:#9bb5bd;--line:#2a414a;--acc:#5cc3e4;--acc2:#12323c;--warn:#f0c27a;--warnbg:#3a2e17;--ok:#6fd6a0;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Tajawal",system-ui,"Segoe UI",Tahoma,sans-serif;line-height:1.8;font-size:17px}
+main{max-width:820px;margin:0 auto;padding:20px 16px 48px}
+h1{font-size:2rem;line-height:1.35;margin:8px 0 10px;font-weight:800;text-align:center;color:#0f2f7a;background:linear-gradient(#f9e3a1,#eab95a);border:3px solid #b98524;border-radius:16px;padding:10px 14px}
+.g3{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}.g3 .card{margin-top:0}
+h2{font-size:1.3rem;margin:32px 0 10px;font-weight:700}
+p{margin:0 0 10px}
+.lead{color:var(--mute);max-width:60ch}
+.scene-wrap{border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--surf)}
+svg{display:block;width:100%;height:auto}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
+button{font:inherit;cursor:pointer;border-radius:10px;border:1.5px solid var(--line);background:var(--surf);color:var(--ink);padding:8px 14px;min-height:44px}
+button:focus-visible,input:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+button[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:#fff;font-weight:700}
+.go{background:var(--ink);color:var(--bg);border-color:var(--ink);font-weight:700}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-top:10px}
+.card h3{margin:0 0 4px;font-size:1.1rem}
+.tag{display:inline-block;font-weight:700;color:var(--acc);margin-inline-end:6px}
+.ayah{font-size:1.15rem;line-height:2;margin:8px 0;padding-inline-start:12px;border-inline-start:4px solid var(--acc)}
+.row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+input[type=range]{flex:1;min-width:160px;accent-color:var(--acc)}
+.drought{background:var(--warnbg);border-color:var(--warn)}
+.steps{display:grid;gap:8px;margin:10px 0}
+.steps button{text-align:start;display:flex;gap:10px;align-items:center}
+.steps button[aria-pressed="true"]{background:var(--ok);border-color:var(--ok)}
+.msg{font-weight:700;color:var(--ok);min-height:1.8em}
+.q{margin-bottom:16px}.opts{display:grid;gap:8px;margin-top:6px}
+.opts button.right{border-color:var(--ok);background:var(--ok);color:#fff}
+.opts button.wrong{border-color:#b3382c;background:#b3382c;color:#fff}
+.note{font-size:.95rem;color:var(--mute)}
+/* scene animation */
+.vap,.drop,.cloud,.flow{transition:opacity .6s}
+.vap{opacity:0}.drop{opacity:0}.cloud{opacity:.15;transform-box:fill-box;transform-origin:center;transition:opacity .6s,transform .6s}
+.s-evap .vap{opacity:1;animation:rise 2.2s linear infinite}
+.vap:nth-child(2){animation-delay:.7s!important}.vap:nth-child(3){animation-delay:1.4s!important}
+.s-cond .cloud,.s-precip .cloud,.s-coll .cloud{opacity:1}
+.s-precip .drop{opacity:var(--rain,.9);animation:fall .8s linear infinite}
+.drop:nth-child(even){animation-delay:.35s!important}
+.flow{stroke-dasharray:10 8;opacity:.25}
+.s-coll .flow,.s-precip .flow{opacity:1;animation:flow 1s linear infinite}
+.sea{transition:transform .8s}
+.dry .sea{transform:translateY(22px)}.dry .cloud{opacity:0!important}.dry .flow{opacity:0!important}.dry .sky{fill:#d9b98a}.dry .vap{opacity:0!important}
+@keyframes rise{0%{transform:translateY(0);opacity:0}20%{opacity:1}100%{transform:translateY(-110px);opacity:0}}
+@keyframes fall{0%{transform:translateY(-10px)}100%{transform:translateY(80px)}}
+@keyframes flow{to{stroke-dashoffset:-18}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main>
+<h1>صلاة الاستسقاء ودورة المطر</h1>
+<p class="lead">اكتشف .. وتعلّم: شاهد كيف يتكوّن المطر خطوة خطوة، ثم تعرّف على صلاة الاستسقاء حين يتأخر المطر.</p>
+
+<h2>1. المشهد التفاعلي</h2>
+<div class="scene-wrap">
+<svg id="scene" class="s-evap" viewBox="0 0 700 340" role="img" aria-label="رسم لدورة الماء: شمس وبحر وسحابة وجبل ونهر">
+<rect class="sky" width="700" height="340" fill="#8fd0ee"/>
+<circle id="sun" cx="70" cy="62" r="30" fill="#ffc83d"/>
+<g class="cloud" id="cloud" fill="#fff"><ellipse cx="450" cy="70" rx="70" ry="30"/><ellipse cx="410" cy="82" rx="45" ry="24"/><ellipse cx="495" cy="84" rx="48" ry="24"/><ellipse cx="445" cy="50" rx="40" ry="26"/></g>
+<g stroke="#2f7fa3" stroke-width="3" stroke-linecap="round" id="drops">
+<line class="drop" x1="410" y1="110" x2="406" y2="124"/><line class="drop" x1="430" y1="112" x2="426" y2="126"/><line class="drop" x1="450" y1="112" x2="446" y2="126"/><line class="drop" x1="470" y1="112" x2="466" y2="126"/><line class="drop" x1="490" y1="110" x2="486" y2="124"/><line class="drop" x1="520" y1="108" x2="516" y2="122"/></g>
+<polygon points="330,340 400,170 450,215 520,130 700,270 700,340" fill="#5d7a52"/>
+<polygon points="520,130 500,152 520,148 536,156" fill="#fff"/>
+<g class="sea"><rect x="0" y="262" width="330" height="90" fill="#1f7fb0"/><path d="M0 262q20-10 40 0t40 0 40 0 40 0 40 0 40 0 40 0 40 0" fill="none" stroke="#bfe6f5" stroke-width="3"/></g>
+<path class="flow" d="M500 200Q440 245 330 272" fill="none" stroke="#2f9ad0" stroke-width="5"/>
+<g stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".95">
+<g class="vap"><path d="M120 250v-20M112 238l8-8 8 8" fill="none"/></g>
+<g class="vap"><path d="M190 250v-20M182 238l8-8 8 8" fill="none"/></g>
+<g class="vap"><path d="M260 250v-20M252 238l8-8 8 8" fill="none"/></g></g>
+<text x="165" y="305" fill="#fff" font-size="16" text-anchor="middle">بحر</text>
+<text x="600" y="310" fill="#fff" font-size="16" text-anchor="middle">جبل</text>
+</svg>
+</div>
+
+<div class="tabs" id="tabs" role="group" aria-label="مراحل الدورة"></div>
+<div class="row"><button class="go" id="play">تشغيل الدورة كاملة</button>
+<label class="row" style="flex:1">حرارة الشمس <input type="range" id="heat" min="10" max="100" value="60" aria-label="حرارة الشمس"></label></div>
+<p class="note" id="heatNote"></p>
+
+<div class="card"><h3 id="stTitle"></h3>
+<p><span class="tag">في العلوم:</span><span id="stSci"></span></p>
+<p><span class="tag">في الاستسقاء:</span><span id="stIst"></span></p>
+<div id="stAyah"></div></div>
+
+<h2>2. ما هي صلاة الاستسقاء؟</h2>
+<div class="g3"><div class="card"><h3>ما هي؟</h3><p>صلاة نطلب فيها من الله تعالى نزول المطر.</p></div><div class="card"><h3>سببها</h3><p>عند تأخر المطر وقلة المياه.</p></div><div class="card"><h3>كيف تؤدى؟</h3><p>بصلاة ركعتين في جماعة مع الدعاء والاستغفار.</p></div></div>
+<h2>3. أهمية المطر</h2>
+<div class="g3"><div class="card"><h3>✓ يسقي النباتات</h3></div><div class="card"><h3>✓ يوفر الماء للإنسان والحيوان</h3></div><div class="card"><h3>✓ يحافظ على الحياة</h3></div></div>
+<h2>4. حين يحلّ الجفاف</h2>
+<p>اضغط على «حلّ الجفاف» لترى الأرض حين يتأخر المطر، ثم أدِّ خطوات الاستسقاء لتعود السحب والمطر.</p>
+<div class="row"><button id="dryBtn" aria-pressed="false">حلّ الجفاف</button></div>
+<div class="card drought" id="dryCard" hidden>
+<p>الأرض عطشى والسحاب غائب. اختر كل خطوة بعد أن تقرأ معناها:</p>
+<div class="steps" id="steps"></div>
+<p class="msg" id="msg" aria-live="polite"></p>
+<p class="note">نأخذ بالأسباب العلمية ونؤمن أن تقدير المطر ونزوله بيد الله وحده؛ فالدعاء عبادة ولا يتعارض مع العلم.</p>
+</div>
+
+<h2>5. اختبر نفسك</h2>
+<div id="quiz"></div>
+<p class="msg" id="score" aria-live="polite"></p>
+</main>
+
+<script>
+const $=id=>document.getElementById(id);
+const ST=[
+{k:'evap',n:'التبخر',sci:'تسخّن الشمس سطح البحار والأنهار فيتحول الماء إلى بخار غير مرئي يصعد إلى الجو.',ist:'ننظر إلى الشمس والبحر آيات تدل على عظمة الخالق، ونتذكر أن الماء نعمة تُحفظ ولا تُهدر.'},
+{k:'cond',n:'التكاثف وتكوّن السحب',sci:'كلما ارتفع البخار برد وتحول إلى قطرات ماء صغيرة جدًا، تتجمع معًا فتكوّن السحب.',ist:'من أسباب المطر السحاب الذي يُساق ويجتمع، وقد وصف القرآن هذا المشهد.',ay:['﴿أَلَمْ تَرَ أَنَّ اللَّهَ يُزْجِي سَحَابًا ثُمَّ يُؤَلِّفُ بَيْنَهُ ثُمَّ يَجْعَلُهُ رُكَامًا فَتَرَى الْوَدْقَ يَخْرُجُ مِنْ خِلَالِهِ﴾','سورة النور، الآية 43']},
+{k:'precip',n:'الهطول',sci:'تكبر القطيرات وتثقل فتسقط على الأرض مطرًا، وقد تسقط بردًا أو ثلجًا إذا كان الجو شديد البرودة.',ist:'هذه هي لحظة الغيث التي نسألها في الاستسقاء، ومن دعاء النبي ﷺ: «اللهم اسقنا غيثًا مغيثًا مريئًا نافعًا غير ضار عاجلًا غير آجل».'},
+{k:'coll',n:'تجمع المياه',sci:'يجري الماء في الأودية والأنهار، ويتسرب بعضه إلى باطن الأرض مكوّنًا المياه الجوفية، ويعود الباقي إلى البحر لتبدأ الدورة من جديد.',ist:'نشكر الله على النعمة بالحمد وبحسن الاستعمال وترشيد الاستهلاك، فالماء الذي يملأ الآبار والسدود هو رزق مشترك.',ay:['﴿وَأَنزَلْنَا مِنَ السَّمَاءِ مَاءً بِقَدَرٍ فَأَسْكَنَّاهُ فِي الْأَرْضِ﴾','سورة المؤمنون، الآية 18']}
+];
+const svg=$('scene');let cur='evap',dry=false,timer=null;
+function render(){
+ svg.setAttribute('class',(dry?'dry ':'')+'s-'+cur);
+ const s=ST.find(x=>x.k===cur);
+ $('stTitle').textContent=s.n;$('stSci').textContent=s.sci;$('stIst').textContent=s.ist;
+ $('stAyah').innerHTML=s.ay?'<p class="ayah">'+s.ay[0]+'<br><span class="note">'+s.ay[1]+'</span></p>':'';
+ [...$('tabs').children].forEach(b=>b.setAttribute('aria-pressed',b.dataset.k===cur));
+}
+function setHeat(){
+ const h=+$('heat').value;
+ $('cloud').style.transform='scale('+(0.7+h/160)+')';
+ svg.style.setProperty('--rain',(0.35+h/160).toFixed(2));
+ $('sun').setAttribute('r',22+h/10);
+ $('heatNote').textContent=h<35?'الحرارة قليلة: يتبخر ماء قليل فيكون السحاب خفيفًا والمطر ضعيفًا.':h<75?'حرارة معتدلة: تبخر جيد وسحاب كافٍ لمطر نافع.':'حرارة عالية: تبخر كثير، لكن الإفراط في الحرارة قد يجفف الأرض أسرع.';
+}
+ST.forEach(s=>{const b=document.createElement('button');b.textContent=s.n;b.dataset.k=s.k;b.onclick=()=>{stop();cur=s.k;render()};$('tabs').appendChild(b)});
+function stop(){if(timer){clearInterval(timer);timer=null;$('play').textContent='تشغيل الدورة كاملة'}}
+$('play').onclick=()=>{
+ if(timer){stop();return}
+ if(dry)toggleDry();
+ $('play').textContent='إيقاف';let i=ST.findIndex(x=>x.k===cur);
+ timer=setInterval(()=>{i=(i+1)%ST.length;cur=ST[i].k;render()},3800);
+};
+$('heat').oninput=setHeat;
+/* istisqa */
+const STEPS=[
+['الاستغفار','نطلب المغفرة من الله ونرجع إليه بقلوب خاشعة.'],
+
+['صلاة ركعتين في جماعة','يجتمع الناس ويصلّون ركعتين خلف الإمام.'],
+['الدعاء','يرفع الناس أيديهم ويدعون الله أن ينزل الغيث.']
+];
+const done=new Set();
+STEPS.forEach((s,i)=>{const b=document.createElement('button');b.setAttribute('aria-pressed','false');
+ b.innerHTML='<strong>'+s[0]+'</strong><span class="note">'+s[1]+'</span>';b.style.flexDirection='column';b.style.alignItems='flex-start';
+ b.onclick=()=>{done.add(i);b.setAttribute('aria-pressed','true');if(done.size===STEPS.length)rain();else $('msg').textContent='أحسنت، بقي '+(STEPS.length-done.size)+' من الخطوات.'};
+ $('steps').appendChild(b)});
+function toggleDry(){
+ dry=!dry;$('dryBtn').setAttribute('aria-pressed',dry);$('dryBtn').textContent=dry?'إنهاء الجفاف':'حلّ الجفاف';
+ $('dryCard').hidden=!dry;
+ if(dry){stop();cur='evap';done.clear();$('msg').textContent='';[...$('steps').children].forEach(b=>b.setAttribute('aria-pressed','false'))}
+ render();
+}
+function rain(){
+ dry=false;$('dryBtn').setAttribute('aria-pressed','false');$('dryBtn').textContent='حلّ الجفاف';
+ $('heat').value=75;setHeat();cur='precip';render();
+ $('msg').textContent='نزل الغيث بإذن الله. شاهد كيف عادت الدورة: تبخر، فتكاثف، فهطول، فتجمع.';
+}
+$('dryBtn').onclick=toggleDry;
+/* quiz */
+const Q=[
+{q:'أي مرحلة تتحول فيها قطيرات الماء إلى سحاب؟',o:['التبخر','التكاثف','الهطول'],a:1},
+{q:'ما مصدر الطاقة الذي يحرّك دورة الماء؟',o:['الرياح فقط','الشمس','القمر'],a:1},
+{q:'كيف تؤدى صلاة الاستسقاء؟',o:['ركعتان في جماعة مع الدعاء والاستغفار','أربع ركعات منفردًا','بلا دعاء'],a:0},{q:'متى نصلي صلاة الاستسقاء؟',o:['عند تأخر المطر وقلة المياه','عند كثرة الأمطار','في كل يوم'],a:0},
+{q:'إلى أين يعود الماء الجاري في الأنهار في نهاية الدورة؟',o:['إلى البحر','إلى الشمس','يختفي'],a:0}
+];
+let sc=0,ans=0;
+Q.forEach(q=>{const d=document.createElement('div');d.className='q';d.innerHTML='<strong>'+q.q+'</strong><div class="opts"></div>';
+ const box=d.querySelector('.opts');let locked=false;
+ q.o.forEach((t,i)=>{const b=document.createElement('button');b.textContent=t;b.onclick=()=>{
+  if(locked)return;locked=true;ans++;
+  if(i===q.a){b.classList.add('right');sc++}else{b.classList.add('wrong');box.children[q.a].classList.add('right')}
+  if(ans===Q.length)$('score').textContent='نتيجتك: '+sc+' من '+Q.length+(sc===Q.length?' ممتاز!':' حاول مرة أخرى بمراجعة المراحل.');};
+  box.appendChild(b)});
+ $('quiz').appendChild(d)});
+setHeat();render();
+</script>
+</body>
+</html>
